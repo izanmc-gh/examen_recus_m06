@@ -25,13 +25,8 @@
 </head>
 <body>
     <div id="main">
-        <!--h1>Click "Get Info" to provide your details</h1-->
-
-        <h1>Hi, "your full name goes here"!!!</h1>
-        <p>You were born on <strong>"Your birth date goes here"</strong></p>
-        <p>That day was <strong>"The date of week goes here"</strong></p>
-        <p>And untill now, you have had <strong>"n"</strong> birthdays on that day of week</p>
-
+        
+        <h2>Click "Get Info" to provide your details</h2>
 
     </div>
     <div id="buttons">
@@ -43,6 +38,19 @@
     addEventListener("load",()=>{
         /*Afegeix el codi aquí per tal que faci tot el que es
         * demana quan carreguem inicialment la pàgina*/
+        const cookies=(arCookies)=>{
+          if(arCookies.length > 0){
+            
+            /*En principi aqui posaria això:
+
+            <h1>Hi, "your full name goes here"!!!</h1>      
+            <p>You were born on "Your birth date goes here"</strong></p>
+            <p>That day was <strong>"The date of week goes here"</strong></p>
+            <p>And untill now, you have had <strong>"n"</strong> birthdays on that day of week</p>
+
+            */
+          }
+        }
     })
 
     /*Code adapted from www.w3schools.com*/
@@ -60,8 +68,6 @@
         }
         return "";
     }
-
-
 
     const loadWindow=()=>{
         /*Afegeix el codi aquí per tal que mostri la pàgina Secondary.html*/

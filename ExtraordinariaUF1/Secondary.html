@@ -42,13 +42,13 @@
       const saveCookies = ()=>{
           if(document.getElementById("name").value.trim().length===0){
               document.getElementById("name").focus();
-              return;
+              return name;
           }else if(document.getElementById("surname").value.trim().length===0){
               document.getElementById("surname").focus();
-              return;
+              return surname;
           } else if(!validDate(document.getElementById("birthDate").value)){
               document.getElementById("birthDate").focus();
-              return;
+              return birthDate;
           }
           setCookiesAndClose(getCookiesAr());
       }
